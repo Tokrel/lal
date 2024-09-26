@@ -26,7 +26,7 @@ def chomp(chocholate_bar, rad, kolumn):
     for i in range(rad, len(chocholate_bar)):
         chocholate_bar[i] = chocholate_bar[i][:kolumn]
 
-    chocholate_bar = [row for row in chocholate_bar if row]  
+    chocholate_bar = list(filter(None, chocholate_bar))
     return chocholate_bar
 
  
